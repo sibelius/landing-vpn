@@ -1,8 +1,36 @@
 import React from 'react';
 import { Flex } from 'rebass';
 import LogoIcon from '../icons/LogoIcon';
-import { MenuText, SignInButton, SignUpButton } from '../App';
 import { Bold, Medium, Regular } from '../ui/Text';
+import styled from 'styled-components';
+import { space } from 'styled-system';
+
+const MenuText = styled.a`
+  font-weight: 400;
+  color: #4F5665;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+  ${space}
+`;
+
+const SignInButton = styled.button`
+  width: 150px;
+  height: 45px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+`;
+
+const SignUpButton = styled.button`
+  border: 1px solid #F53855;
+  background-color: transparent;
+  border-radius: 50px;
+  width: 150px;
+  height: 45px;
+  cursor: pointer;
+`;
 
 const Navbar = () => {
   return (
