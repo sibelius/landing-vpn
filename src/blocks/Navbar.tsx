@@ -1,8 +1,8 @@
 import React from 'react';
 import { Flex } from 'rebass';
-import LogoIcon from './icons/LogoIcon';
-import { MenuText, SignInButton, SignUpButton } from './App';
-import { Bold, Medium, Regular } from './ui/Text';
+import LogoIcon from '../icons/LogoIcon';
+import { MenuText, SignInButton, SignUpButton } from '../App';
+import { Bold, Medium, Regular } from '../ui/Text';
 
 const Navbar = () => {
   return (
