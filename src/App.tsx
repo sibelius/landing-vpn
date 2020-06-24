@@ -5,6 +5,7 @@ import Navbar from './blocks/Navbar';
 import GetStarted from './blocks/GetStarted';
 import Stats from './blocks/Stats';
 import Features from './blocks/Features';
+import Plans from './blocks/Plans';
 
 const Layout = styled(Flex)`
   && {
@@ -16,6 +17,14 @@ const Layout = styled(Flex)`
   }
 `;
 
+const BackgroundGradient = styled.div`
+  background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0) 88.56%);
+`;
+
+const BackgroundFooter = styled.div`
+  background-color: #F8F8F8;
+`;
+
 const App = () => {
   return (
     <Layout>
@@ -23,6 +32,10 @@ const App = () => {
       <GetStarted />
       <Stats />
       <Features />
+      <BackgroundGradient>
+        <Plans />
+      </BackgroundGradient>
+      <BackgroundFooter />
     </Layout>
   );
 }
