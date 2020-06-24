@@ -68,7 +68,7 @@ const Plans = () => {
           Let's choose the package that is best for you and explore it happily and cheerfully.
         </Regular>
       </Flex>
-      <Flex mt='60px' justifyContent='space-between'>
+      <Flex mt='60px' justifyContent='space-between' flexWrap='wrap'>
         <PlanType>
           <Img src={Free} />
           <Medium mt='30px'>Free Plan</Medium>
