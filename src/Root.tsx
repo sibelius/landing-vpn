@@ -16,13 +16,13 @@ const GlobalStyle = createGlobalStyle`
 const Root = () => {
   return (
     <StylesProvider injectFirst>
-      <MuiThemeProvider theme={theme}>
-        <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme}>
+        <MuiThemeProvider theme={theme}>
           <CssBaseline />
           <GlobalStyle />
           <App />
-        </ThemeProvider>
-      </MuiThemeProvider>
+        </MuiThemeProvider>
+      </ThemeProvider>
     </StylesProvider>
   )
 }

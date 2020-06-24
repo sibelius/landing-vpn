@@ -1,9 +1,10 @@
 import React from 'react';
-import { Text, Flex } from 'rebass';
+import { Flex } from 'rebass';
 import styled from 'styled-components';
-import { background, borders, color, space } from 'styled-system';
-import LogoIcon from './icons/LogoIcon';
+import { space } from 'styled-system';
 import Navbar from './Navbar';
+import macImg from './img/mac.png';
+import { Bold, Medium, Regular } from './ui/Text';
 
 const Layout = styled(Flex)`
   && {
@@ -12,30 +13,6 @@ const Layout = styled(Flex)`
     max-width: 1100px;
     flex-direction: column;       
   }
-`;
-
-export const Regular = styled(Text).attrs({
-  as: 'span'
-})`
-  font-weight: 400;
-  ${space}
-  ${color}
-`;
-
-export const Medium = styled(Text).attrs({
-  as: 'span'
-})`
-  font-weight: 500;
-  ${space}
-  ${color}
-`;
-
-export const Bold = styled(Text).attrs({
-  as: 'span'
-})`
-  font-weight: bold;
-  ${space}
-  ${color}
 `;
 
 export const MenuText = styled.a`
@@ -65,10 +42,53 @@ export const SignUpButton = styled.button`
   cursor: pointer;
 `;
 
+const Img = styled.img`
+  width: 600px;
+  height: 380px;
+`;
+
+export const GetStartedButton = styled.button`
+  width: 250px;
+  height: 60px;
+  background-color: #F53838;
+  border: 0;
+  cursor: pointer;
+  border-radius: 10px;
+  ${space}
+`;
+
+export const BoxShadow = styled.div`
+  position: relative;
+  width: 211.83px;
+  height: 60px;
+  background: rgba(245, 56, 56, 0.35);
+  filter: blur(54px);
+  border-radius: 10px;
+  top: -30px;
+  left: 20px;
+`
+
 const App = () => {
   return (
     <Layout>
       <Navbar />
+      <Flex mt='80px' justifyContent='space-between'>
+        <Flex flexDirection='column'>
+          <Medium
+            fontSize='48px'
+            color='#0B132A'
+            lineHeight='70px'
+          >Want anything to be easy with <Bold>LaslesVPN.</Bold></Medium>
+          <Regular mt='20px'>
+            Provide a network for all your needs with ease and fun using <Bold>LaslesVPN</Bold> discover interesting features from us.
+          </Regular>
+          <GetStartedButton mt='50px'>
+            <Bold color='#ffffff'>Get Started</Bold>
+          </GetStartedButton>
+          <BoxShadow />
+        </Flex>
+        <Img src={macImg} />
+      </Flex>
     </Layout>
   );
 }
