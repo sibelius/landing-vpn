@@ -21,18 +21,6 @@ export const Block = styled.div`
   ${space}
 `;
 
-export const LayerBlur = styled.div`
-  background: #0D1025;
-  opacity: 0.06;
-  filter: blur(114px);
-  border-radius: 10px;
-  width: 1068.84px;
-  height: 189.22px;
-  position: relative;
-  top: -10px;
-  left: 30px;
-`;
-
 export const CircleIcon = styled.div`
   background-color: #FFECEC;
   border-radius: 50%;
@@ -48,9 +36,25 @@ export const Divider = styled.div`
   width: 0px;
 `;
 
+const LayerRelative = styled.div`
+  position: relative;
+`;
+
+// TODO - fix this
+const LayerBlur = styled.div`
+  background: #0D1025;
+  opacity: 0.06;
+  filter: blur(114px);
+  border-radius: 10px;
+  width: 1068.84px;
+  height: 189.22px;
+  position: absolute; 
+`;
+
+
 const Stats = () => {
   return (
-    <>
+    <LayerRelative>
       <Block mt='100px'>
         <Flex alignItems='center' pb='30px' pt='30px'>
           <CircleIcon>
@@ -83,7 +87,7 @@ const Stats = () => {
         </Flex>
       </Block>
       <LayerBlur />
-    </>
+    </LayerRelative>
   );
 }
 
