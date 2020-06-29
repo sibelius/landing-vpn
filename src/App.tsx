@@ -6,6 +6,7 @@ import GetStarted from './blocks/GetStarted';
 import Stats from './blocks/Stats';
 import Features from './blocks/Features';
 import Plans from './blocks/Plans';
+import Map from './blocks/Map';
 
 const Layout = styled(Flex)`
   && {
@@ -13,16 +14,20 @@ const Layout = styled(Flex)`
     margin-right: auto;
     margin-bottom: 100px;
     max-width: 1100px;
-    flex-direction: column;       
+    flex-direction: column;
   }
 `;
 
 const BackgroundGradient = styled.div`
-  background: linear-gradient(180deg, #F8F8F8 -45.04%, rgba(248, 248, 248, 0) 88.56%);
+  background: linear-gradient(
+    180deg,
+    #f8f8f8 -45.04%,
+    rgba(248, 248, 248, 0) 88.56%
+  );
 `;
 
 const BackgroundFooter = styled.div`
-  background-color: #F8F8F8;
+  background-color: #f8f8f8;
 `;
 
 const App = () => {
@@ -34,10 +39,11 @@ const App = () => {
       <Features />
       <BackgroundGradient>
         <Plans />
+        <Map />
       </BackgroundGradient>
       <BackgroundFooter />
     </Layout>
   );
-}
+};
 
 export default App;
