@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Flex } from 'rebass';
 import styled from 'styled-components';
 import Navbar from './blocks/Navbar';
@@ -7,6 +7,7 @@ import Stats from './blocks/Stats';
 import Features from './blocks/Features';
 import Plans from './blocks/Plans';
 import Map from './blocks/Map';
+import Sponsored from './blocks/Sponsored';
 
 const Layout = styled(Flex)`
   && {
@@ -31,6 +32,15 @@ const BackgroundFooter = styled.div`
 `;
 
 const App = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      console.log({
+        scrollHeight: document.body.scrollHeight,
+      });
+      window.scrollTo(0, document.body.scrollHeight);
+    }, 400);
+  }, []);
+
   return (
     <Layout>
       <Navbar />
@@ -40,6 +50,7 @@ const App = () => {
       <BackgroundGradient>
         <Plans />
         <Map />
+        <Sponsored />
       </BackgroundGradient>
       <BackgroundFooter />
     </Layout>
