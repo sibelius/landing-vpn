@@ -9,15 +9,20 @@ import Plans from './blocks/Plans';
 import Map from './blocks/Map';
 import Sponsored from './blocks/Sponsored';
 import Footer from './blocks/Footer';
+import Subscribe from './blocks/Subscribe';
 
 const Layout = styled(Flex)`
   && {
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 100px;
-    max-width: 1100px;
     flex-direction: column;
   }
+`;
+
+const Center = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+  flex-direction: column;
 `;
 
 const BackgroundGradient = styled.div`
@@ -44,17 +49,24 @@ const App = () => {
 
   return (
     <Layout>
-      <Navbar />
-      <GetStarted />
-      <Stats />
-      <Features />
+      <Center>
+        <Navbar />
+        <GetStarted />
+        <Stats />
+        <Features />
+      </Center>
       <BackgroundGradient>
-        <Plans />
-        <Map />
-        <Sponsored />
+        <Center>
+          <Plans />
+          <Map />
+          <Sponsored />
+        </Center>
       </BackgroundGradient>
+      <Subscribe />
       <BackgroundFooter>
-        <Footer />
+        <Center>
+          <Footer />
+        </Center>
       </BackgroundFooter>
     </Layout>
   );
