@@ -8,6 +8,7 @@ import Features from './blocks/Features';
 import Plans from './blocks/Plans';
 import Map from './blocks/Map';
 import Sponsored from './blocks/Sponsored';
+import Footer from './blocks/Footer';
 
 const Layout = styled(Flex)`
   && {
@@ -52,7 +53,9 @@ const App = () => {
         <Map />
         <Sponsored />
       </BackgroundGradient>
-      <BackgroundFooter />
+      <BackgroundFooter>
+        <Footer />
+      </BackgroundFooter>
     </Layout>
   );
 };
