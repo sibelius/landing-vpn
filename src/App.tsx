@@ -10,6 +10,7 @@ import Map from './blocks/Map';
 import Sponsored from './blocks/Sponsored';
 import Footer from './blocks/Footer';
 import Subscribe from './blocks/Subscribe';
+import Customers from './blocks/Customers';
 
 const Layout = styled(Flex)`
   && {
@@ -61,6 +62,7 @@ const App = () => {
           <Map />
           <Sponsored />
         </Center>
+        <Customers />
       </BackgroundGradient>
       <Subscribe />
       <BackgroundFooter>
