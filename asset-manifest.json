@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.js": "/landing-vpn/static/js/main.1abb7140.chunk.js",
+    "main.js.map": "/landing-vpn/static/js/main.1abb7140.chunk.js.map",
+    "runtime-main.js": "/landing-vpn/static/js/runtime-main.1df51d33.js",
+    "runtime-main.js.map": "/landing-vpn/static/js/runtime-main.1df51d33.js.map",
+    "static/js/2.d174988b.chunk.js": "/landing-vpn/static/js/2.d174988b.chunk.js",
+    "static/js/2.d174988b.chunk.js.map": "/landing-vpn/static/js/2.d174988b.chunk.js.map",
+    "index.html": "/landing-vpn/index.html",
+    "precache-manifest.5781928a7917d88ff29a9dabcec5528d.js": "/landing-vpn/precache-manifest.5781928a7917d88ff29a9dabcec5528d.js",
+    "service-worker.js": "/landing-vpn/service-worker.js",
+    "static/js/2.d174988b.chunk.js.LICENSE.txt": "/landing-vpn/static/js/2.d174988b.chunk.js.LICENSE.txt",
+    "static/media/Free.png": "/landing-vpn/static/media/Free.221689fd.png",
+    "static/media/Premium.png": "/landing-vpn/static/media/Premium.135feda1.png",
+    "static/media/Standard.png": "/landing-vpn/static/media/Standard.51046edb.png",
+    "static/media/amazon.png": "/landing-vpn/static/media/amazon.268b35c4.png",
+    "static/media/discord.png": "/landing-vpn/static/media/discord.0973c8b6.png",
+    "static/media/feature.png": "/landing-vpn/static/media/feature.d3b19f4f.png",
+    "static/media/kim.png": "/landing-vpn/static/media/kim.40b6a381.png",
+    "static/media/mac.png": "/landing-vpn/static/media/mac.d7a0b874.png",
+    "static/media/map.png": "/landing-vpn/static/media/map.252c155e.png",
+    "static/media/reddit.png": "/landing-vpn/static/media/reddit.a60f57eb.png",
+    "static/media/spotify.png": "/landing-vpn/static/media/spotify.4414c66d.png",
+    "static/media/viezh.png": "/landing-vpn/static/media/viezh.09139267.png",
+    "static/media/yessica.png": "/landing-vpn/static/media/yessica.a84fe695.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1df51d33.js",
+    "static/js/2.d174988b.chunk.js",
+    "static/js/main.1abb7140.chunk.js"
+  ]
+}
