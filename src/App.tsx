@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Flex } from 'rebass';
 import styled from 'styled-components';
 import Navbar from './blocks/Navbar';
@@ -39,15 +39,6 @@ const BackgroundFooter = styled.div`
 `;
 
 const App = () => {
-  useEffect(() => {
-    setTimeout(() => {
-      console.log({
-        scrollHeight: document.body.scrollHeight,
-      });
-      window.scrollTo(0, document.body.scrollHeight);
-    }, 400);
-  }, []);
-
   return (
     <Layout>
       <Center>
