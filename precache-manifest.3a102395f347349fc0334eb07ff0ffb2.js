@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "cc1603765cbf4941fae9606705e238d9",
+    "revision": "da660a15a410ef6c2639497e5d53ad76",
     "url": "/landing-vpn/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/landing-vpn/static/js/2.d174988b.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b2ffa05c1133692f8fbc",
-    "url": "/landing-vpn/static/js/main.1abb7140.chunk.js"
+    "revision": "a345051245f0f57ec930",
+    "url": "/landing-vpn/static/js/main.cf399c9f.chunk.js"
   },
   {
     "revision": "b5d11cb60c41b74c2ad9",

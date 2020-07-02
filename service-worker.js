@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/landing-vpn/precache-manifest.5781928a7917d88ff29a9dabcec5528d.js"
+  "/landing-vpn/precache-manifest.3a102395f347349fc0334eb07ff0ffb2.js"
 );
 
 self.addEventListener('message', (event) => {
