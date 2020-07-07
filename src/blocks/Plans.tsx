@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Text } from 'rebass';
+import { Flex } from 'rebass';
 import { Medium, Regular } from '../ui/Text';
 import Free from '../img/Free.png';
 import Premium from '../img/Premium.png';
@@ -17,10 +17,10 @@ const Img = styled.img`
 
 const Ul = styled.ul`
   list-style: none;
-  
+
   li::before {
-    content: "";    
-    background-image: url(${props => props.src});
+    content: '';
+    background-image: url(${(props) => props.src});
     background-size: contain;
     display: inline-block;
     width: 1em;
@@ -39,9 +39,9 @@ const Li = styled.li`
 const PlanType = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  background-color: #FFFFFF;
-  border: 2px solid #DDDDDD;
+  align-items: center;
+  background-color: #ffffff;
+  border: 2px solid #dddddd;
   border-radius: 10px;
   padding-top: 80px;
   padding-bottom: 180px;
@@ -59,138 +59,101 @@ const PlanPriceButtonRelative = styled.div`
 
 const Plans = () => {
   return (
-    <Flex mt='80px' flexDirection='column'>
-      <Flex alignItems='center' flexDirection='column'>
-        <Medium fontSize='35px'>
-          Choose Your Plan
-        </Medium>
-        <Regular fontSize='16px' mt='20px'>
-          Let's choose the package that is best for you and explore it happily and cheerfully.
+    <Flex mt="80px" flexDirection="column">
+      <Flex alignItems="center" flexDirection="column">
+        <Medium fontSize="35px">Choose Your Plan</Medium>
+        <Regular fontSize="16px" mt="20px">
+          Let's choose the package that is best for you and explore it happily
+          and cheerfully.
         </Regular>
       </Flex>
-      <Flex mt='60px' justifyContent='space-between' flexWrap='wrap'>
+      <Flex mt="60px" justifyContent="space-between" flexWrap="wrap">
         <PlanType>
           <Img src={Free} />
-          <Medium mt='30px'>Free Plan</Medium>
-          <Ul src={JamCheck} mt='30px'>
+          <Medium mt="30px">Free Plan</Medium>
+          <Ul src={JamCheck} mt="30px">
             <Li>
-              <Regular fontSize='14px'>
-                Unlimited Bandwitch
-              </Regular>
+              <Regular fontSize="14px">Unlimited Bandwitch</Regular>
             </Li>
             <Li>
-              <Regular fontSize='14px'>
-                Encrypted Connection
-              </Regular>
+              <Regular fontSize="14px">Encrypted Connection</Regular>
             </Li>
             <Li>
-              <Regular fontSize='14px'>
-                No Traffic Logs
-              </Regular>
+              <Regular fontSize="14px">No Traffic Logs</Regular>
             </Li>
             <Li>
-              <Regular fontSize='14px'>
-                Works on All Devices
-              </Regular>
+              <Regular fontSize="14px">Works on All Devices</Regular>
             </Li>
           </Ul>
           <PlanPriceButtonRelative>
-            <Flex alignItems='center' flexDirection='column'>
-              <Medium fontSize='25px' mb='20px'>
+            <Flex alignItems="center" flexDirection="column">
+              <Medium fontSize="25px" mb="20px">
                 Free
               </Medium>
-              <BorderButton>
-                Select
-              </BorderButton>
+              <BorderButton>Select</BorderButton>
             </Flex>
           </PlanPriceButtonRelative>
         </PlanType>
 
         <PlanType>
           <Img src={Standard} />
-          <Medium mt='30px'>Standard Plan</Medium>
-          <Ul src={JamCheck} mt='30px'>
+          <Medium mt="30px">Standard Plan</Medium>
+          <Ul src={JamCheck} mt="30px">
             <Li>
-              <Regular fontSize='14px'>
-                Unlimited Bandwitch
-              </Regular>
+              <Regular fontSize="14px">Unlimited Bandwitch</Regular>
             </Li>
             <Li>
-              <Regular fontSize='14px'>
-                Encrypted Connection
-              </Regular>
+              <Regular fontSize="14px">Encrypted Connection</Regular>
             </Li>
             <Li>
-              <Regular fontSize='14px'>
-                Yes Traffic Logs
-              </Regular>
+              <Regular fontSize="14px">Yes Traffic Logs</Regular>
             </Li>
             <Li>
-              <Regular fontSize='14px'>
-                Works on All Devices
-              </Regular>
+              <Regular fontSize="14px">Works on All Devices</Regular>
             </Li>
             <Li>
-              <Regular fontSize='14px'>
-                Connect Anyware
-              </Regular>
+              <Regular fontSize="14px">Connect Anyware</Regular>
             </Li>
           </Ul>
           <PlanPriceButtonRelative>
-            <Flex alignItems='center' flexDirection='column'>
-              <Medium fontSize='25px' mb='20px'>
+            <Flex alignItems="center" flexDirection="column">
+              <Medium fontSize="25px" mb="20px">
                 $9<Regular> / mo</Regular>
               </Medium>
-              <BorderButton>
-                Select
-              </BorderButton>
+              <BorderButton>Select</BorderButton>
             </Flex>
           </PlanPriceButtonRelative>
         </PlanType>
 
         <PlanType>
           <Img src={Premium} />
-          <Medium mt='30px'>Premium Plan</Medium>
-          <Ul src={JamCheck} mt='30px'>
+          <Medium mt="30px">Premium Plan</Medium>
+          <Ul src={JamCheck} mt="30px">
             <Li>
-              <Regular fontSize='14px'>
-                Unlimited Bandwitch
-              </Regular>
+              <Regular fontSize="14px">Unlimited Bandwitch</Regular>
             </Li>
             <Li>
-              <Regular fontSize='14px'>
-                Encrypted Connection
-              </Regular>
+              <Regular fontSize="14px">Encrypted Connection</Regular>
             </Li>
             <Li>
-              <Regular fontSize='14px'>
-                Yes Traffic Logs
-              </Regular>
+              <Regular fontSize="14px">Yes Traffic Logs</Regular>
             </Li>
             <Li>
-              <Regular fontSize='14px'>
-                Works on All Devices
-              </Regular>
+              <Regular fontSize="14px">Works on All Devices</Regular>
             </Li>
             <Li>
-              <Regular fontSize='14px'>
-                Connect Anyware
-              </Regular>
+              <Regular fontSize="14px">Connect Anyware</Regular>
             </Li>
             <Li>
-              <Regular fontSize='14px'>
-                Get New Features
-              </Regular>
+              <Regular fontSize="14px">Get New Features</Regular>
             </Li>
           </Ul>
           <PlanPriceButtonRelative>
-            <Flex alignItems='center' flexDirection='column'>
-              <Medium fontSize='25px' mb='20px'>
+            <Flex alignItems="center" flexDirection="column">
+              <Medium fontSize="25px" mb="20px">
                 $12<Regular> / mo</Regular>
               </Medium>
-              <RedBlurButton>
-                Select
-              </RedBlurButton>
+              <RedBlurButton>Select</RedBlurButton>
             </Flex>
           </PlanPriceButtonRelative>
         </PlanType>

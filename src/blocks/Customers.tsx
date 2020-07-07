@@ -41,14 +41,6 @@ const CardScroll = styled.div`
   -webkit-overflow-scrolling: touch;
 `;
 
-const Center = styled.div`
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1100px;
-  flex-direction: column;
-  ${space}
-`;
-
 const ScrollItem = styled.div`
   background-color: #f53838;
   width: 45px;

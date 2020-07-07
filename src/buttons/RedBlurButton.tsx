@@ -1,14 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Bold, Medium } from '../ui/Text';
+import { Bold } from '../ui/Text';
 import { space } from 'styled-system';
-import { Flex } from 'rebass';
-import { BoxShadow, GetStartedButton } from '../blocks/GetStarted';
 
 const Button = styled.button`
   width: 250px;
   height: 45px;
-  background-color: #F53838;
+  background-color: #f53838;
   border: 0;
   cursor: pointer;
   border-radius: 10px;
@@ -30,11 +28,11 @@ const ButtonBlur = styled.div`
   top: 55px;
 `;
 
-const RedBlurButton = ({ children }) => {
+const RedBlurButton: React.FC = ({ children }) => {
   return (
     <ButtonRelative>
       <Button>
-        <Bold color='#ffffff'>{children}</Bold>
+        <Bold color="#ffffff">{children}</Bold>
       </Button>
       <ButtonBlur />
     </ButtonRelative>

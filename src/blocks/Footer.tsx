@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Text } from 'rebass';
+import { Flex } from 'rebass';
 import styled from 'styled-components';
 import LogoIcon from '../icons/LogoIcon';
 import { Bold, Medium, Regular } from '../ui/Text';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Text } from 'rebass';
+import { Flex } from 'rebass';
 import { layout } from 'styled-system';
 import styled from 'styled-components';
 import Amazon from '../img/amazon.png';
@@ -7,13 +7,6 @@ import Discord from '../img/discord.png';
 import Netflix from '../img/netflix.png';
 import Reddit from '../img/reddit.png';
 import Spotify from '../img/spotify.png';
-
-const Grid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(5, minmax(200px, 1fr));
-  margin-top: 100px;
-  align-items: center;
-`;
 
 const Img = styled.img`
   ${layout}
