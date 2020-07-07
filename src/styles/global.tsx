@@ -9,7 +9,7 @@ export default createGlobalStyle`
   }
 
   body {
-    font-family: Rubik, "sans-serif";
+    font-family: Rubik, sans-serif;
     --webkit-font-smoothing: antialiased !important;
   }
 

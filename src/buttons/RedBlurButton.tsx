@@ -30,7 +30,7 @@ const ButtonBlur = styled.div`
 
 const RedBlurButton: React.FC = ({ children }) => {
   return (
-    <ButtonRelative>
+    <ButtonRelative className="button-relative">
       <Button>
         <Bold color="#ffffff">{children}</Bold>
       </Button>
