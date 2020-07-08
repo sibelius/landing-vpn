@@ -44,7 +44,7 @@ const CardScroll = styled.div`
   -webkit-overflow-scrolling: touch;
   margin: 50px 20px;
 
-  ${media.lessThan('medium')`
+  ${media.lessThan('large')`
     margin-left: 0;
     padding: 20px;
   `}
