@@ -1,11 +1,18 @@
-import * as React from "react";
+import * as React from 'react';
+import { SpaceProps } from 'styled-system';
+
 import { Svg } from '../ui/Svg';
 
-type Props = {
-  size?: number,
-  fill?: string,
+interface Props extends SpaceProps {
+  size?: number;
+  fill?: string;
 }
-const LogoIcon = ({ size = 35, fill = '#F53838', ...props}: Props) => {
+
+const LogoIcon: React.FC<Props> = ({
+  size = 35,
+  fill = '#F53838',
+  ...props
+}) => {
   return (
     <Svg width={size} height={size} viewBox="0 0 35 37" fill="none" {...props}>
       <path
@@ -14,6 +21,6 @@ const LogoIcon = ({ size = 35, fill = '#F53838', ...props}: Props) => {
       />
     </Svg>
   );
-}
+};
 
 export default LogoIcon;
