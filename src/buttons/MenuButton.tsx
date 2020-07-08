@@ -25,24 +25,6 @@ const Button = styled.button`
     margin: 8px 0;
   }
 
-  input:checked {
-    padding: 25px 0;
-    transform: rotate(180deg);
-
-    ~ .line-1 {
-      transform: rotate(45deg);
-    }
-
-    ~ .line-2 {
-      margin: -3px 0;
-      opacity: 0;
-    }
-
-    ~ .line-3 {
-      transform: rotate(-45deg);
-    }
-  }
-
   span {
     border-top: 3px solid #000;
     display: block;
@@ -57,7 +39,6 @@ interface MenuButtonProps {
 
 const MenuButton: React.FC<MenuButtonProps> = ({ onClick }) => (
   <Button role="button" onClick={onClick}>
-    <input type="checkbox" />
     <span className="line-1"></span>
     <span className="line-2"></span>
     <span className="line-3"></span>
