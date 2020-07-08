@@ -24,6 +24,8 @@ const Center = styled.div`
   margin-right: auto;
   max-width: 1100px;
   flex-direction: column;
+  display: flex;
+  width: 100%;
 `;
 
 const BackgroundGradient = styled.div`
