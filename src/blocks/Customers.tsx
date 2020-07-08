@@ -1,16 +1,18 @@
 import React from 'react';
 import { Flex } from 'rebass';
 import styled from 'styled-components';
+import { space, SpaceProps } from 'styled-system';
+import media from 'styled-media-query';
+
 import { Medium, Regular } from '../ui/Text';
 import Viezh from '../img/viezh.png';
 import Yessica from '../img/yessica.png';
 import Kim from '../img/kim.png';
 import StarIcon from '../icons/StarIcon';
-import { space } from 'styled-system';
 import ArrowLeftIcon from '../icons/ArrowLeftIcon';
 import ArrowRightIcon from '../icons/ArrowRightIcon';
 
-const Card = styled.div`
+const Card = styled.div<SpaceProps>`
   display: flex;
   flex: 0 0 auto;
   width: 400px;
@@ -19,9 +21,12 @@ const Card = styled.div`
   border-radius: 10px;
   padding: 30px;
   flex-direction: column;
+  margin-right: 30px;
+
   &:hover {
     border: 2px solid #f53838;
   }
+
   ${space}
 `;
 
@@ -33,15 +38,19 @@ const Picture = styled.img`
 const CardScroll = styled.div`
   overflow-x: scroll;
   overflow-y: hidden;
-  margin-left: 50px;
-  margin-top: 60px;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   -webkit-overflow-scrolling: touch;
+  margin: 50px 20px;
+
+  ${media.lessThan('medium')`
+    margin-left: 0;
+    padding: 20px;
+  `}
 `;
 
-const ScrollItem = styled.div`
+const ScrollItem = styled.div<SpaceProps>`
   background-color: #f53838;
   width: 45px;
   height: 15px;
@@ -49,15 +58,16 @@ const ScrollItem = styled.div`
   ${space}
 `;
 
-const Circle = styled.div`
+const Circle = styled.div<SpaceProps>`
   background-color: #dde0e4;
   height: 15px;
   width: 15px;
   border-radius: 50%;
+
   ${space}
 `;
 
-const CircleBorderRed = styled.button`
+const CircleBorderRed = styled.button<SpaceProps>`
   height: 60px;
   width: 60px;
   border-radius: 50%;
@@ -69,7 +79,7 @@ const CircleBorderRed = styled.button`
   ${space}
 `;
 
-const CircleAllRed = styled.button`
+const CircleAllRed = styled.button<SpaceProps>`
   background-color: #f53838;
   border: 2px solid #f53838;
   height: 60px;
@@ -78,13 +88,14 @@ const CircleAllRed = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
+
   ${space}
 `;
 
 const Customers = () => {
   return (
     <Flex mt="50px" flexDirection="column">
-      <Flex flexDirection="column" alignItems="center">
+      <Flex flexDirection="column" alignItems="center" padding={[40, 0]}>
         <Medium fontSize="35px" textAlign="center">
           Trusted by Thousands of
           <br /> Happy Customer
@@ -95,7 +106,7 @@ const Customers = () => {
         </Regular>
       </Flex>
       <CardScroll>
-        <Card ml="30px">
+        <Card>
           <Flex justifyContent="space-between">
             <Flex>
               <Picture src={Viezh} />
@@ -115,7 +126,7 @@ const Customers = () => {
             LaslesVPN always the best”.
           </Regular>
         </Card>
-        <Card ml="30px">
+        <Card>
           <Flex justifyContent="space-between">
             <Flex>
               <Picture src={Yessica} />
@@ -134,7 +145,7 @@ const Customers = () => {
             high speed.”.
           </Regular>
         </Card>
-        <Card ml="30px">
+        <Card>
           <Flex justifyContent="space-between">
             <Flex>
               <Picture src={Kim} />
@@ -154,13 +165,7 @@ const Customers = () => {
           </Regular>
         </Card>
       </CardScroll>
-      <Flex
-        flex={1}
-        mt="80px"
-        justifyContent="space-between"
-        ml="50px"
-        mr="50px"
-      >
+      <Flex flex={1} mt="80px" justifyContent="space-between" mx={[20, 50]}>
         <Flex>
           <ScrollItem />
           <Circle ml="15px" />
