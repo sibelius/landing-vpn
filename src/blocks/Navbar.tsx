@@ -15,6 +15,7 @@ const MenuText = styled.a<SpaceProps>`
   font-weight: 400;
   color: #4f5665;
   cursor: pointer;
+
   &:hover {
     text-decoration: underline;
   }
@@ -42,6 +43,7 @@ export const DrawerContent = styled(Flex)`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-evenly;
   padding: 40px;
   width: 300px;
   height: 100%;
@@ -55,7 +57,7 @@ export const DrawerContent = styled(Flex)`
     align-items: center;
 
     & + div {
-      margin-top: auto;
+      margin-top: 40px;
     }
   }
 
@@ -67,6 +69,16 @@ export const DrawerContent = styled(Flex)`
   button {
     font-size: 16px;
   }
+`;
+
+export const NavbarContainer = styled(Flex)`
+  padding: 20px;
+  margin-top: 50px;
+
+  ${media.lessThan('medium')`
+    padding: 40px;
+    margin-top: 0;
+  `}
 `;
 
 const NavbarContent = () => (
@@ -98,12 +110,10 @@ const Navbar = () => {
   };
 
   return (
-    <Flex
+    <NavbarContainer
       flex={1}
       justifyContent="space-between"
       alignItems="center"
-      mt="50px"
-      padding="20px"
     >
       <Flex flexDirection="row" alignItems="center">
         <LogoIcon mr="10px" />
@@ -124,7 +134,7 @@ const Navbar = () => {
       ) : (
         <NavbarContent />
       )}
-    </Flex>
+    </NavbarContainer>
   );
 };
 
