@@ -63,7 +63,7 @@
       "eslint --fix"
     ],
     "*.yml": [
-      "yarn prettier --write",
+      "yarn prettier --write"
     ]
   },
   "pre-commit": "lint:staged",
