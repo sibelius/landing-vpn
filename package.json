@@ -21,8 +21,11 @@
     "react-router-config": "5.1.1",
     "react-router-dom": "5.2.0",
     "rebass": "4.0.7",
+    "reflexbox": "^4.0.6",
     "styled-components": "5.1.0",
-    "styled-system": "5.1.5"
+    "styled-media-query": "^2.1.2",
+    "styled-system": "5.1.5",
+    "use-window-size-hook": "^1.1.22"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^4.2.4",
@@ -33,6 +36,7 @@
     "@types/react-router-config": "^5.0.1",
     "@types/react-router-dom": "^5.1.5",
     "@types/rebass": "4.0.6",
+    "@types/reflexbox": "^4.0.1",
     "@types/styled-components": "5.1.0",
     "@types/styled-system": "5.1.5",
     "@types/testing-library__jest-dom": "^5.9.1",

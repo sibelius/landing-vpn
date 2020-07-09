@@ -1,5 +1,5 @@
 import React from 'react';
-import { Flex, Text } from 'rebass';
+import { Flex } from 'rebass';
 import styled from 'styled-components';
 import { Medium, Regular } from '../ui/Text';
 import GlobalMap from '../img/map.png';
@@ -7,7 +7,7 @@ import GlobalMap from '../img/map.png';
 const Img = styled.img`
   max-width: 100%;
   height: auto;
-  margin-top: 150px;
+  padding: 150px 40px;
 `;
 
 const Map = () => {
@@ -18,6 +18,7 @@ const Map = () => {
         alignItems="center"
         justifyContent="center"
         flexDirection="column"
+        padding={[40, 0]}
       >
         <Medium fontSize="35px" textAlign="center">
           Huge Global Network

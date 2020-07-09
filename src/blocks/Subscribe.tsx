@@ -1,7 +1,9 @@
 import React from 'react';
-import { Flex, Text } from 'rebass';
+import { Flex } from 'rebass';
 import styled from 'styled-components';
 import { space } from 'styled-system';
+import media from 'styled-media-query';
+
 import { Medium, Regular } from '../ui/Text';
 import RedBlurButton from '../buttons/RedBlurButton';
 
@@ -9,14 +11,34 @@ export const Block = styled.div`
   background-color: #fff;
   margin-left: 70px;
   margin-right: 70px;
-  padding-top: 35px;
-  padding-bottom: 35px;
-  padding-left: 90px;
-  padding-right: 90px;
   display: flex;
   justify-content: space-between;
   border-radius: 10px;
+
   ${space}
+  ${media.lessThan('medium')`
+    flex-direction: column;
+    align-items: center;
+
+    .button-relative {
+      width: 100%;
+      padding: 1rem;
+    }
+
+    button {
+      margin-top: 35px;
+      width: 100%;
+    }
+  `}
+`;
+
+export const TextWrapper = styled(Flex)`
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  flex-direction: column;
+  flex: 2;
 `;
 
 const LayerRelative = styled.div`
@@ -27,7 +49,7 @@ const Subscribe = () => {
   return (
     <LayerRelative>
       <Block mt="100px" alignItems="center">
-        <Flex flexDirection="column">
+        <TextWrapper flexDirection="column">
           <Medium fontSize="35px">
             Subscribe Now for
             <br /> Get Special Features!
@@ -35,8 +57,8 @@ const Subscribe = () => {
           <Regular fontSize="16px" mt="20px">
             Let's subscribe with us and find the fun.
           </Regular>
-        </Flex>
-        <Flex alignSelf="center">
+        </TextWrapper>
+        <Flex alignSelf="center" width="100%" flex="1">
           <RedBlurButton>Subscribe Now</RedBlurButton>
         </Flex>
       </Block>

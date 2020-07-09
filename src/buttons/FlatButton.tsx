@@ -10,7 +10,7 @@ const TransparentButton = styled.button`
   cursor: pointer;
 `;
 
-const FlatButton = ({ children }) => {
+const FlatButton: React.FC = ({ children }) => {
   return (
     <TransparentButton>
       <Medium>{children}</Medium>

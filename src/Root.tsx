@@ -1,17 +1,12 @@
 import React from 'react';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import { ThemeProvider as MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
-import { ThemeProvider, createGlobalStyle } from 'styled-components';
+import { ThemeProvider as MuiThemeProvider } from '@material-ui/core/styles';
+import { ThemeProvider } from 'styled-components';
 import { StylesProvider } from '@material-ui/styles';
+
 import App from './App';
-
-const theme = createMuiTheme();
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    font-family: Rubik;   
-  }
-`
+import GlobalStyles from './styles/global';
+import theme from './styles/theme';
 
 const Root = () => {
   return (
@@ -19,12 +14,12 @@ const Root = () => {
       <ThemeProvider theme={theme}>
         <MuiThemeProvider theme={theme}>
           <CssBaseline />
-          <GlobalStyle />
+          <GlobalStyles />
           <App />
         </MuiThemeProvider>
       </ThemeProvider>
     </StylesProvider>
-  )
-}
+  );
+};
 
 export default Root;

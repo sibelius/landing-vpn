@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { Medium } from '../ui/Text';
 
 const Button = styled.button`
-  border: 1px solid #F53855;
+  border: 1px solid #f53855;
   background-color: transparent;
   border-radius: 50px;
   width: 150px;
@@ -11,10 +11,10 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-const BorderButton = ({ children }) => {
+const BorderButton: React.FC = ({ children }) => {
   return (
     <Button>
-      <Medium color='#F53855'>{children}</Medium>
+      <Medium color="#F53855">{children}</Medium>
     </Button>
   );
 };
